@@ -1,69 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-    <link rel="stylesheet" href="../../assets/css/normalize.css" />
-    <link rel="iconX" href="../../assets/" />
-  </head>
-  <body>
-    <!--Navbar-->
-    <nav class="navbar">
-      <div class="logo" id="Home">
-        <img src="/assets/images/icon/icon_portfolio.svg" alt="Logo" />
-        <h2>Portafolio</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/normalize.css" />
+  <link rel="iconX" href="../../assets/" />
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar">
+    <div class="logo" id="Home">
+      <img src="/assets/images/icon/icon_portfolio.svg" alt="Logo" />
+      <h2>Portafolio</h2>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#About">Acerca</a></li>
+      <li><a href="#Services">Habilidades</a></li>
+      <li><a href="#Product">Proyectos</a></li>
+      <li><a href="#Location">Contacto</a></li>
+    </ul>
+    <div class="menu-icon" id="menu-icon">☰</div>
+  </nav>
+
+  <!--Contenedor principal-->
+  <main class="main">
+    <!--Cabecera-->
+    <header class="header">
+      <div class="header-content">
+        <h1>Bienvenido a nuestra página web</h1>
+        <p>Esta es una página web de ejemplo.</p>
+        <a href="#Product" class="button-add-icon">Ver productos
+          <img src="" alt="Icono">
+        </a>
       </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#About">Acerca</a></li>
-        <li><a href="#Services">Habilidades</a></li>
-        <li><a href="#Product">Proyectos</a></li>
-        <li><a href="#Location">Contacto</a></li>
-      </ul>
-      <div class="menu-icon" id="menu-icon">☰</div>
-    </nav>
-    <!--Contenedor principal-->
-    <main class="main">
-        <!--Cabecera-->
-        <header class="header">
-            <div class="header-content">
-                <h1>Bienvenido a nuestra página web</h1>
-                <p>Esta es una página web de ejemplo.</p>
-                <a href="#Product" class="button-add-icon">Ver productos
-                    <img src="./public/images/icon/icon-arrow-forward.svg" alt="Icono">
-                </a>
-            </div>
-        </header>
+    </header>
 
-        <!--Section: About-->
-        <section class="section section-1">
-          <h2>Sección 1</h2>
-          <p>Este es el contenido de la sección 1.</p>
-        </section>
+    <!--Section: About-->
+    <section class="section section-1">
+      <!-- Contenedor para texto -->
+      <div class="text-container">
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy [Tu Nombre]. Soy un apasionado de la tecnología, el diseño web y la creación de experiencias
+          digitales innovadoras. Me encanta aprender cosas nuevas y trabajar en proyectos que desafíen mis habilidades.
+        </p>
+        <button class="btn-about">Conoce más</button>
+      </div>
 
-        <!--Section: Skills-->
-        <section class="section section-2">
-          <h2>Sección 2</h2>
-          <p>Este es el contenido de la sección 2.</p>
-        </section>
+      <!-- Contenedor para la imagen -->
+      <div class="image-container">
+        <img src="../../assets/images/person.svg" alt="Mi foto">
+      </div>
+    </section>
 
-        <!--Section: Proyects-->
-        <section class="section section-2">
-            <h2>Sección 2</h2>
-            <p>Este es el contenido de la sección 2.</p>
-          </section>
+    <!--Section: Skills-->
+    <section class="section section-2">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <span>HTML</span>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <span>CSS</span>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <span>Python</span>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          <span>Java</span>
+        </div>
+      </div>
+    </section>
 
-          <!--Section: Contact-->
-        <section class="section section-2">
-            <h2>Sección 2</h2>
-            <p>Este es el contenido de la sección 2.</p>
-          </section>
-      </main>
+    <!-- Section: Projects -->
+    <section class="section section-3">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://source.unsplash.com/300x200/?technology,code" alt="Proyecto 1">
+          <div class="project-info">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto.</p>
+            <a href="#" class="project-btn">Ver más</a>
+          </div>
+        </div>
 
-      <!-- Footer -->
-      <footer class="footer">&copy; 2023 Todos los derechos reservados.</footer>
-    </main>
-  </body>
+        <div class="project-card">
+          <img src="https://source.unsplash.com/300x200/?app,design" alt="Proyecto 2">
+          <div class="project-info">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto.</p>
+            <a href="#" class="project-btn">Ver más</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://source.unsplash.com/300x200/?website,development" alt="Proyecto 3">
+          <div class="project-info">
+            <h3>Proyecto 3</h3>
+            <p>Descripción breve del proyecto.</p>
+            <a href="#" class="project-btn">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-4">
+      <!-- Contenedor de Información -->
+      <div class="section-info">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna consulta? Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+      </div>
+
+      <!-- Contenedor de Formulario -->
+      <div class="section-form">
+        <h2>Formulario de Contacto</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="Tu correo">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Sección Acerca de -->
+      <div class="footer-about">
+        <h3>Sobre mí</h3>
+        <p>Desarrollador web apasionado por el diseño y la programación.</p>
+      </div>
+
+      <!-- Sección Enlaces -->
+      <div class="footer-links">
+        <h3>Enlaces</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <!-- Sección Redes Sociales -->
+      <div class="footer-social">
+        <h3>Sígueme</h3>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>

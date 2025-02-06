@@ -122,11 +122,53 @@ body {
   padding: 20px;
 }
 
-/* Footer */
 .footer {
-  background-color: aquamarine;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
+  gap: 20px;
   text-align: center;
-  padding: 10px;
+}
+
+/* Sección Acerca de */
+.footer-about p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Sección Enlaces */
+.footer-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Sección Redes Sociales */
+.footer-social a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #f0f0f0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr; /* Apilar en una columna */
+    text-align: center;
+  }
 }
 
 /* Media Queries para pantallas más pequeñas */
@@ -153,5 +195,319 @@ body {
 
   .section {
     padding: 10px;
+  }
+}
+
+/* Sección Sobre mí */
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.section-1 h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.section-1 p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  max-width: 800px;
+}
+
+.section-1 .image-container {
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-1 .image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .section-1 {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+
+  .section-1 .text-container {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .section-1 .image-container {
+    max-width: 100%;
+  }
+
+  .section-1 h2 {
+    font-size: 2rem;
+  }
+
+  .section-1 p {
+    font-size: 1rem;
+  }
+}
+
+/* Sección de habilidades */
+.section-2 {
+  background-color: #f4f4f4;
+  padding: 3rem;
+  text-align: center;
+}
+
+.section-2 h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* Grid de habilidades */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tarjetas de habilidades */
+.skill-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 140px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-card span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Efecto hover */
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 15px;
+  }
+  .skill-card {
+    width: 100px;
+    height: 120px;
+  }
+  .skill-card img {
+    width: 40px;
+    height: 40px;
+  }
+  .skill-card span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Sección de proyectos */
+.section-3 {
+  background-color: #f4f4f4;
+  padding: 3rem;
+  text-align: center;
+}
+
+.section-3 h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* Grid de proyectos */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tarjeta de proyecto */
+.project-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Botón de la tarjeta */
+.project-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.project-btn:hover {
+  background: #0056b3;
+}
+
+/* Efecto hover en la tarjeta */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}
+
+/* Contenedor principal */
+.section-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas */
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Sección izquierda */
+.section-info {
+  background: #007bff;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-info h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.section-info p {
+  font-size: 16px;
+}
+
+/* Sección derecha */
+.section-form {
+  background: #fff;
+  padding: 40px;
+}
+
+.section-form h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section-4 {
+    grid-template-columns: 1fr; /* Se apila en una columna */
   }
 }
