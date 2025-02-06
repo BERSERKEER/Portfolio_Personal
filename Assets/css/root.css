@@ -10,4 +10,7 @@
   --azul-petroleo: #3b4c69; /* Azul petróleo */
   --azul-noche: #2c3e50; /* Azul noche */
   --azul-turquesa: #40e0d0; /* Azul turquesa */
+
+  /*Fuente*/
+  --font-family: Arial, Helvetica, sans-serif;
 }

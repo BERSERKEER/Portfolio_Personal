@@ -1,176 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="../../Assets/css/style.css" />
-    <link rel="stylesheet" href="../../Assets/css/normalize.css" />
-</head>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/normalize.css" />
+    <link rel="iconX" href="../../assets/" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar">
+      <div class="logo" id="Home">
+        <img src="/assets/images/icon/icon_portfolio.svg" alt="Logo" />
+        <h2>Portafolio</h2>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#About">Acerca</a></li>
+        <li><a href="#Services">Habilidades</a></li>
+        <li><a href="#Product">Proyectos</a></li>
+        <li><a href="#Location">Contacto</a></li>
+      </ul>
+      <div class="menu-icon" id="menu-icon">☰</div>
+    </nav>
+    <!--Contenedor principal-->
+    <main class="main">
+        <!--Cabecera-->
+        <header class="header">
+            <div class="header-content">
+                <h1>Bienvenido a nuestra página web</h1>
+                <p>Esta es una página web de ejemplo.</p>
+                <a href="#Product" class="button-add-icon">Ver productos
+                    <img src="./public/images/icon/icon-arrow-forward.svg" alt="Icono">
+                </a>
+            </div>
+        </header>
 
-<body>
-    <!-- Encabezado -->
-    <header>
-        <nav>
-            <div class="logo">Code Artistic</div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Hill stations</a>
-                <a href="#">Explore</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="register">
-                <a href="#">Register</a>
-            </div>
-        </nav>
-        <section class="h-text">
-            <span>Enjoy</span>
-            <h1>Explore the World</h1>
-            <br />
-            <a href="#">Visit Now</a>
+        <!--Section: About-->
+        <section class="section section-1">
+          <h2>Sección 1</h2>
+          <p>Este es el contenido de la sección 1.</p>
         </section>
-    </header>
 
-    <!-- Sobre Nosotros -->
-    <section class="about">
-        <div class="main-content">
-            <div class="about-me">
-                <h2 class="spacing-h2">ABOUT ME</h2>
-                <p class="spacing-p">
-                    Here you will find more information about me, what I do, and my
-                    current skills mostly in terms of programming and technology
-                </p>
-                <div class="content-container">
-                    <div>
-                        <h2>Get to know me!</h2>
-                        <p>
-                            I'm a Frontend Focused Web Developer building and managing the
-                            Front-end of Websites and Web Applications that leads to the success
-                            of the overall product. Check out some of my work in the Projects
-                            section.
-                        </p>
-                        <p>
-                            I also like sharing content related to the stuff that I have learned
-                            over the years in Web Development so it can help other people of the
-                            Dev Community. Feel free to Connect or Follow me on my LinkedIn and
-                            Instagram where I post useful content related to Web Development and
-                            Programming.
-                        </p>
-                        <p>
-                            I'm open to Job opportunities where I can contribute, learn and
-                            grow. If you have a good opportunity that matches my skills and
-                            experience then don't hesitate to contact me.
-                        </p>
-                        <a href="#" class="contact-button">CONTACT</a>
-                    </div>
+        <!--Section: Skills-->
+        <section class="section section-2">
+          <h2>Sección 2</h2>
+          <p>Este es el contenido de la sección 2.</p>
+        </section>
 
-                    <div class="skills">
-                        <h2>My Skills</h2>
-                        <div class="skills-list">
-                            <div>HTML</div>
-                            <div>CSS</div>
-                            <div>JavaScript</div>
-                            <div>React</div>
-                            <div>Wordpress</div>
-                            <div>PHP</div>
-                            <div>SASS</div>
-                            <div>GIT</div>
-                            <div>Github</div>
-                            <div>Responsive Design</div>
-                            <div>SEO</div>
-                            <div>Terminal</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+        <!--Section: Proyects-->
+        <section class="section section-2">
+            <h2>Sección 2</h2>
+            <p>Este es el contenido de la sección 2.</p>
+          </section>
 
-    </section>
+          <!--Section: Contact-->
+        <section class="section section-2">
+            <h2>Sección 2</h2>
+            <p>Este es el contenido de la sección 2.</p>
+          </section>
+      </main>
 
-    <!-- Proyectos -->
-    <section class="proyects-title">
-        <div class="main-content">
-            <h1>HEY, MY NAME IS JOHN DOE</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-            <div class="project">
-                <div class="project-image">
-                    <img src="../../Assets/images/12.jpg" alt="Proyecto 1" />
-                </div>
-                <div class="project-description">
-                    <h2>Dopefolio</h2>
-                    <p>
-                        Dopefolio is a successful Open-Source project that I created which
-                        have been featured on some of the biggest tech sites like CSS-Tricks,
-                        Hostinger, etc & used by thousands of developers globally
-                    </p>
-                    <a href="#">CASE STUDY</a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-image">
-                    <img src="../../Assets/images/12.jpg" alt="Proyecto 1" />
-                </div>
-                <div class="project-description">
-                    <h2>Dopefolio</h2>
-                    <p>
-                        Dopefolio is a successful Open-Source project that I created which
-                        have been featured on some of the biggest tech sites like CSS-Tricks,
-                        Hostinger, etc & used by thousands of developers globally
-                    </p>
-                    <a href="#">CASE STUDY</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="contact">
-        <div class="main-content">
-            <h2>Contacto</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Nombre" required />
-                <input type="email" placeholder="Correo Electrónico" required />
-                <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>Code Artistic</h3>
-                <p>
-                    Explorando el mundo del diseño, desarrollo y creatividad. Únete a
-                    nosotros para aprender más.
-                </p>
-            </div>
-            <div class="footer-links">
-                <h4>Enlaces Rápidos</h4>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4>Síguenos</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook" /></a>
-                    <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter" /></a>
-                    <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram" /></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Code Artistic. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-</body>
-
+      <!-- Footer -->
+      <footer class="footer">&copy; 2023 Todos los derechos reservados.</footer>
+    </main>
+  </body>
 </html>
