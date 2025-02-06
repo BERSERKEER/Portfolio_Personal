@@ -1,1 +1,13 @@
 /*Variables Globales*/
+:root {
+  --azul-claro: #add8e6; /* Azul claro */
+  --azul-oscuro: #003366; /* Azul oscuro */
+  --azul-pastel: #a7c7e7; /* Azul pastel */
+  --azul-marino: #1e3a5f; /* Azul marino */
+  --azul-vibrante: #007bff; /* Azul vibrante */
+  --azul-acero: #4682b4; /* Azul acero */
+  --azul-cielo: #87ceeb; /* Azul cielo */
+  --azul-petroleo: #3b4c69; /* Azul petróleo */
+  --azul-noche: #2c3e50; /* Azul noche */
+  --azul-turquesa: #40e0d0; /* Azul turquesa */
+}
