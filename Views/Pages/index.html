@@ -6,9 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio</title>
+  <!--Style routes-->
   <link rel="stylesheet" href="../../assets/css/style.css" />
   <link rel="stylesheet" href="../../assets/css/normalize.css" />
-  <link rel="iconX" href="../../assets/" />
+  <link rel="icon" id="favicon" type="image/x-icon" href="../../assets/images/icon/icon_portfolio.svg">
+  <!--JS routes-->
+  <script src="/assets/js/theme_icon_nav.js"></script>
 </head>
 
 <body>
@@ -20,9 +23,9 @@
     </div>
     <ul class="nav-links" id="nav-links">
       <li><a href="#About">Acerca</a></li>
-      <li><a href="#Services">Habilidades</a></li>
-      <li><a href="#Product">Proyectos</a></li>
-      <li><a href="#Location">Contacto</a></li>
+      <li><a href="#Skills">Habilidades</a></li>
+      <li><a href="#Proyects">Proyectos</a></li>
+      <li><a href="#Contact">Contacto</a></li>
     </ul>
     <div class="menu-icon" id="menu-icon">☰</div>
   </nav>
@@ -34,21 +37,29 @@
       <div class="header-content">
         <h1>Bienvenido a nuestra página web</h1>
         <p>Esta es una página web de ejemplo.</p>
-        <a href="#Product" class="button-add-icon">Ver productos
-          <img src="" alt="Icono">
+        <a href="../../assets/component/cv.pdf" class="button button1">Descargar CV
+          <img src="../../assets/images/icon/icon_file_download.svg" alt="Icono" class="icon">
         </a>
       </div>
     </header>
 
     <!--Section: About-->
-    <section class="section section-1">
+    <section class="section section-1" id="About">
       <!-- Contenedor para texto -->
       <div class="text-container">
         <h2>Sobre Mí</h2>
         <p>Hola, soy [Tu Nombre]. Soy un apasionado de la tecnología, el diseño web y la creación de experiencias
           digitales innovadoras. Me encanta aprender cosas nuevas y trabajar en proyectos que desafíen mis habilidades.
         </p>
-        <button class="btn-about">Conoce más</button>
+        <a href="../../assets/component/cv.pdf" class="button button1">Descargar CV
+          <img src="../../assets/images/icon/icon_file_download.svg" alt="Icono" class="icon">
+        </a>
+        <a href="../../assets/component/cv.pdf" class="button button1">Descargar CV
+          <img src="../../assets/images/icon/icon_file_download.svg" alt="Icono" class="icon">
+        </a>
+        <a href="../../assets/component/cv.pdf" class="button button1">Descargar CV
+          <img src="../../assets/images/icon/icon_file_download.svg" alt="Icono" class="icon">
+        </a>
       </div>
 
       <!-- Contenedor para la imagen -->
@@ -58,7 +69,7 @@
     </section>
 
     <!--Section: Skills-->
-    <section class="section section-2">
+    <section class="section section-2" id="Skills">
       <h2>Habilidades</h2>
       <div class="skills-grid">
         <div class="skill-card">
@@ -86,20 +97,23 @@
     </section>
 
     <!-- Section: Projects -->
-    <section class="section section-3">
+    <section class="section section-3" id="Proyects">
       <h2>Proyectos</h2>
+      <p>Qui asdasd asd a sda da</p>
       <div class="projects-grid">
         <div class="project-card">
-          <img src="https://source.unsplash.com/300x200/?technology,code" alt="Proyecto 1">
+          <img src="/assets/images/person.svg" alt="Proyecto 1">
           <div class="project-info">
             <h3>Proyecto 1</h3>
             <p>Descripción breve del proyecto.</p>
-            <a href="#" class="project-btn">Ver más</a>
+            <a href="../../assets/component/cv.pdf" class="button button2">Descargar CV
+              <img src="../../assets/images/icon/icon_file_download.svg" alt="Icono" class="icon icon1">
+            </a>
           </div>
         </div>
 
         <div class="project-card">
-          <img src="https://source.unsplash.com/300x200/?app,design" alt="Proyecto 2">
+          <img src="/assets/images/person.svg" alt="Proyecto 2">
           <div class="project-info">
             <h3>Proyecto 2</h3>
             <p>Descripción breve del proyecto.</p>
@@ -108,7 +122,7 @@
         </div>
 
         <div class="project-card">
-          <img src="https://source.unsplash.com/300x200/?website,development" alt="Proyecto 3">
+          <img src="/assets/images/person.svg" alt="Proyecto 3">
           <div class="project-info">
             <h3>Proyecto 3</h3>
             <p>Descripción breve del proyecto.</p>
@@ -118,7 +132,7 @@
       </div>
     </section>
 
-    <section class="section section-4">
+    <section class="section section-4" id="Contact">
       <!-- Contenedor de Información -->
       <div class="section-info">
         <h2>Contacto</h2>
@@ -143,21 +157,20 @@
             <label for="message">Mensaje</label>
             <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
           </div>
-
-          <button type="submit" class="btn">Enviar</button>
+          <a href="../../assets/component/cv.pdf" class="button button2">Descargar CV
+            <img src="../../assets/images/icon/icon_file_download.svg" alt="Icono" class="icon icon1">
+          </a>
         </form>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <!-- Sección Acerca de -->
       <div class="footer-about">
         <h3>Sobre mí</h3>
         <p>Desarrollador web apasionado por el diseño y la programación.</p>
       </div>
 
-      <!-- Sección Enlaces -->
       <div class="footer-links">
         <h3>Enlaces</h3>
         <a href="#inicio">Inicio</a>
@@ -165,7 +178,6 @@
         <a href="#contacto">Contacto</a>
       </div>
 
-      <!-- Sección Redes Sociales -->
       <div class="footer-social">
         <h3>Sígueme</h3>
         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -174,6 +186,14 @@
       </div>
     </footer>
   </main>
+  <script>
+    const menuIcon = document.getElementById("menu-icon");
+    const navLinks = document.getElementById("nav-links");
+
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 
 </html>
