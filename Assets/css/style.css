@@ -1,237 +1,439 @@
-/* Estilos Generales */
 body {
-  font-family: "Fira Code", monospace;
-  background: #1e1e1e;
+  background-color: #1e1e1e;
   color: #d4d4d4;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Consolas", "Courier New", monospace;
 }
 
-/* Contenedor Principal (Pantalla Completa) */
-.editor {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #252526;
-}
-
-/* Header */
+/* HEADER */
 .header {
+  height: 30px;
+  background-color: #3c3c3c;
   display: flex;
   align-items: center;
-  background: #333;
-  padding: 10px;
+  padding: 0 10px;
+  justify-content: space-between;
+  font-size: 1.2rem;
 }
 
-.buttons {
+.header-buttons {
   display: flex;
+  gap: 10px;
 }
 
-.btn {
+.header-button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-right: 5px;
-  display: inline-block;
-}
-
-.red {
-  background: #ff5f56;
-}
-.yellow {
-  background: #ffbd2e;
-}
-.green {
-  background: #27c93f;
-}
-
-.title {
-  margin-left: auto;
-  font-size: 14px;
-  color: #ccc;
-}
-
-/* Contenedor Principal */
-.content {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  height: 100%;
-}
-
-/* Sidebar */
-.sidebar {
-  background: #2d2d2d;
-  padding: 15px;
-  border-right: 2px solid #444;
-}
-
-.sidebar h3 {
-  font-size: 14px;
-  color: #888;
-  margin-bottom: 10px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul li {
-  padding: 8px;
-  border-left: 3px solid transparent;
   cursor: pointer;
-  transition: 0.3s;
-  font-size: 14px;
+}
+
+.header-button.close {
+  background-color: #ff5f56;
+}
+.header-button.minimize {
+  background-color: #ffbd2e;
+}
+.header-button.maximize {
+  background-color: #27c93f;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.main-container {
+  flex: 1;
   display: flex;
 }
 
-/* 🔹 Estilos para los enlaces dentro de la barra lateral */
-.sidebar ul li a {
-  text-decoration: none; /* Quita el subrayado */
-  color: inherit; /* Mantiene el color original del texto */
-  display: block; /* Hace que ocupe todo el <li> para que el clic sea más fácil */
-}
-
-/* 🔹 Cambia el color cuando pasas el mouse */
-.sidebar ul li:hover,
-.sidebar ul li:hover a {
-  border-left: 3px solid #569cd6;
-  background: rgba(255, 255, 255, 0.1);
-  color: white; /* Opcional: cambia el color del texto */
-}
-
-/* 🔹 Estilo para el elemento activo */
-.sidebar .active,
-.sidebar .active a {
-  border-left: 3px solid #569cd6;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-
-/* Área Principal */
-.main {
+/* EXPLORER (Barra lateral) */
+.explorer {
+  width: 250px;
+  min-width: 200px;
+  background-color: #252526;
+  border-right: 1px solid #404040;
   display: flex;
   flex-direction: column;
-  background: #1e1e1e;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Pestañas */
-.tabs {
+.explorer-header {
+  padding: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #808080;
+  font-weight: bold;
   display: flex;
-  background: #252526;
-  border-bottom: 2px solid #444;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-tree {
+  padding: 5px;
+  font-size: 1.2rem;
+  overflow-y: auto;
+}
+
+.file-item {
+  padding: 5px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.file-item:hover {
+  background-color: #2a2d2e;
+}
+
+/* EDITOR */
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-bar {
+  height: 35px;
+  background-color: #2d2d2d;
+  display: flex;
 }
 
 .tab {
   padding: 8px 15px;
+  background-color: #1e1e1e;
+  margin-right: 1px;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 14px;
-  color: #bbb;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .tab.active {
-  background: #1e1e1e;
-  color: white;
-  border-bottom: 2px solid transparent;
+  border-top: 1px solid #007acc;
 }
 
-.tab:hover {
-  background: #333;
-}
-
-/* Área de Código */
-.code {
-  flex-grow: 1;
-  padding: 2rem;
-  overflow-y: auto;
-}
-
-/* Código */
-pre {
-  margin: 0;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* Resaltado de Sintaxis */
-.keyword {
-  color: #569cd6;
-}
-.string {
-  color: #ce9178;
-}
-.function {
-  color: #dcdcaa;
-}
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-  gap: 40px;
-}
-
-.hero-content {
-  max-width: 50%;
-}
-
-.hero-image {
+/* ÁREA DEL CÓDIGO */
+.code-container {
   flex: 1;
   display: flex;
-  justify-content: center;
 }
 
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.line-numbers {
+  padding: 10px;
+  text-align: right;
+  color: #858585;
+  background-color: #1e1e1e;
+  user-select: none;
+  min-width: 50px;
+  font-size: 1.2rem;
 }
 
-.welcome-text {
-  color: #39b54a;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 20px;
+.code-area {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 1.2rem;
 }
 
-.main-heading {
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 40px;
-}
-
-.buttons {
+/* BARRA DE ESTADO */
+.status-bar {
+  height: 22px;
+  background-color: #007acc;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 12px;
+  justify-content: space-between;
 }
 
-.button {
-  padding: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.status-bar div {
+  display: flex;
+  gap: 15px;
+}
+
+/* SECCIONES TITLE */
+.section-title {
+  color: #8cb993;
+}
+
+.present-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.dashed-line {
+  flex-grow: 1;
+  border-top: 2px dashed whitesmoke;
+  margin: 0 10px;
+}
+
+.profile-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 3px solid whitesmoke;
+  padding: 5px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 15px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill span {
+  margin-top: 5px;
   font-size: 14px;
-  border: 2px solid white;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  color: #d4d4d4;
 }
 
-.button:hover {
-  background: white;
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .explorer {
+    position: absolute;
+    width: 200px;
+    left: -200px;
+    height: 100%;
+    z-index: 100;
+  }
+
+  .explorer.open {
+    left: 0;
+  }
+
+  .code-area {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 10px;
+  }
+
+  .tab-bar {
+    height: 30px;
+  }
+
+  .status-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .line-numbers {
+    font-size: 10px;
+  }
+
+  .code-area {
+    font-size: 11px;
+  }
+}
+
+/* Tarjeta del Proyecto */
+.project {
+  display: flex;
+  align-items: center;
+  background-color: #252526;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+}
+
+.project img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+/* Información del Proyecto */
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  color: #8cb993;
+  margin-bottom: 10px;
+}
+
+/* Tecnologías */
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tech {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.html {
+  background-color: #e44d26;
+  color: white;
+}
+.css {
+  background-color: #1572b6;
+  color: white;
+}
+.js {
+  background-color: #f7df1e;
   color: black;
+}
+
+/* Links */
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.learn-more {
+  background-color: #ffd700;
+  color: black;
+}
+
+.github {
+  background-color: transparent;
+  color: #d4d4d4;
+  border: 1px solid #d4d4d4;
+}
+
+.github i {
+  margin-right: 5px;
+}
+
+.learn-more:hover,
+.github:hover {
+  opacity: 0.8;
+}
+
+/* Contenedor del Botón */
+.cv-container {
+  display: flex;
+}
+
+/* Botón de Descargar CV */
+.cv-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #007acc;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cv-button i {
+  font-size: 16px;
+}
+
+/* Efecto Hover */
+.cv-button:hover {
+  background-color: #005fa3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor del Formulario */
+.contact-form {
+  background-color: #252526;
+  display: flex;
+  width: 100%;
+}
+
+/* Estilos para Inputs y Textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: #1e1e1e;
+  border: 1px solid #404040;
+  color: #d4d4d4;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 14px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007acc;
+}
+
+/* Botón de Enviar */
+.send-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #007acc;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.send-button i {
+  font-size: 16px;
+}
+
+/* Hover del Botón */
+.send-button:hover {
+  background-color: #005fa3;
+}
+
+/* Mensaje de Respuesta */
+.form-message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #8cb993;
+}
+
+section {
+  margin-bottom: 4rem;
 }
