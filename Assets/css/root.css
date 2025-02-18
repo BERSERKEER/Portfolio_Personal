@@ -1,21 +1,15 @@
 /*Variables Globales*/
 :root {
-  --color-background: #0c0c0c; /* Negro profundo */
-  --color-text: #ffffff; /* Blanco puro */
-  --color-primary: #1f1f1f; /* Gris oscuro */
-  --color-secondary: #292929; /* Gris más claro */
-  --color-accent: #007bff; /* Azul brillante para resaltar */
-  --color-hover: #0056b3; /* Azul más oscuro para efectos hover */
-  --color-border: #3a3a3a; /* Gris medio para bordes y separaciones */
-
-  /*Fuente*/
-  --font-family: Arial, Helvetica, sans-serif;
+  --gray-color-light: #3c3c3c;
+  --gray-color-dark: #1e1e1e;
+  --gray-color-smooth: #252526;
+  --color-background: #0c0c0c;
+  --color-text: #d4d4d4;
+  --color-yellow: #f7df1e;
 
   /*Effect values*/
   --effect-transition-button: 3s;
 
   /*Borde values*/
   --radius-border: 4px;
-
-  --max-width: 1200px;
 }
