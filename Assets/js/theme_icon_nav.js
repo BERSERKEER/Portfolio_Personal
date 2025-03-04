@@ -1,4 +1,3 @@
-
 function changeFavicon() {
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const favicon = document.getElementById('favicon');

@@ -1,15 +1,11 @@
-/*Variables Globales*/
 :root {
-  --gray-color-light: #3c3c3c;
-  --gray-color-dark: #1e1e1e;
-  --gray-color-smooth: #252526;
-  --color-background: #0c0c0c;
-  --color-text: #d4d4d4;
-  --color-yellow: #f7df1e;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #d0d0d0;
 
-  /*Effect values*/
-  --effect-transition-button: 3s;
-
-  /*Borde values*/
-  --radius-border: 4px;
+  --background-dark: var(--color-black);
+  --background-light: var(--color-white);
+  --text-light: var(--color-white);
+  --text-dark: var(--color-black);
+  --border-color: var(--color-white);
 }

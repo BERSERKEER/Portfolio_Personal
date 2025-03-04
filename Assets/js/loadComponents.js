@@ -8,9 +8,7 @@ function loadComponent(containerId, filePath) {
   
   // Cargar componentes
   document.addEventListener("DOMContentLoaded", function () {
-    loadComponent("header-container", "header.html");
-    loadComponent("sidebar-container", "sidebar.html");
-    loadComponent("tabs-container", "tabs.html");
-    loadComponent("main-container", "main.html");
+    loadComponent("footer-container", "./component/footer.html");
+    loadComponent("header-container", "./component/header.html");
   });
   
