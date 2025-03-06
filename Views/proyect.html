@@ -12,30 +12,37 @@
   <link id="favicon" rel="icon" type="image/png" href="/assets/images/icon/icon_portfolio_light.svg">
 </head>
 
-<body>
-
+<body class="fade-in">
   <!-- Navegación -->
   <div id="header-container"></div>
-
   <!-- Contenedor Principal -->
   <div class="container">
 
     <!-- Encabezado -->
-    <header>
-      <h1>Bienvenido a Mi Portfolio</h1>
-      <p>Desarrollador Web & Diseñador Creativo</p>
+    <header id="home" class="view">
+      <div class="block">
+        <h1 id="typed-text-container">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </h1>
+        <p>Programador Web Frontend | Apasionado por el Aprendizaje y la Innovación</p>
+      </div>
     </header>
 
     <!-- Sección: Preview img -->
-    <section class="section-1 sec-pad">
+    <section class="section-1 sec-pad block">
       <div class="main-container">
         <div class="preview">
           <img src="/assets/images/tem-project.jpg">
         </div>
+
+        <div class="two-content">
+          <a href="" class="btn">Vista previa</a>
+          <a href="" class="btn">Repositorio</a>
+        </div>
       </div>
     </section>
 
-    <section class="section-1 sec-pad">
+    <section class="section-1 sec-pad block">
       <h2 class="main-container variant">Proyecto</h2>
       <div class="main-container">
         <div class="text-content variant">
@@ -51,14 +58,10 @@
     </section>
 
     <!-- Sección: Proyectos -->
-    <section class="section-1 sec-pad">
+    <section class="section-1 sec-pad block">
       <h2 class="main-container variant">Herramientas usadas</h2>
       <div class="main-container">
         <div class="text-content variant">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur blanditiis praesentium ex
-            nostrum excepturi dolores, autem quaerat itaque laudantium, illum nam error nulla, odit ducimus fuga saepe
-            labore recusandae!</p>
-
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur blanditiis praesentium ex
             nostrum excepturi dolores, autem quaerat itaque laudantium, illum nam error nulla, odit ducimus fuga saepe
             labore recusandae!</p>
@@ -72,6 +75,26 @@
 
   <!-- Scripts -->
   <script src="/assets/js/loadComponents.js"></script>
+  <!-- Script: Effect write --->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const text = "¡Hola de nuevo!";
+      const speed = 100;
+      let i = 0;
+      const typedText = document.getElementById("typed-text");
+
+      function typeWriter() {
+        if (i < text.length) {
+          typedText.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      typeWriter();
+    });
+
+  </script>
 </body>
 
 </html>

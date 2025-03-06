@@ -12,38 +12,68 @@
   <link id="favicon" rel="icon" type="image/png" href="/assets/images/icon/icon_portfolio_light.svg">
 </head>
 
-<body>
-
+<body class="fade-in">
   <!-- Navegación -->
   <div id="header-container"></div>
 
   <!-- Contenedor Principal -->
   <div class="container">
-
     <!-- Encabezado -->
-    <header>
-      <h1>Bienvenido a Mi Portfolio</h1>
-      <p>Desarrollador Web & Diseñador Creativo</p>
+    <header id="home" class="view">
+      <div class="block">
+        <h1 id="typed-text-container">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </h1>
+        <p>Programador Web Frontend | Apasionado por el Aprendizaje y la Innovación</p>
+      </div>
     </header>
 
-    <!-- Sección: Servicios -->
-    <section class="section-1 sec-pad">
-      <h2 class="section-title">Servicios</h2>
+    <!-- Sección: Sobre mi -->
+    <section class="section-1 sec-pad block" id="about">
+      <h2 class="section-title">Sobre mí</h2>
       <div class="main-container">
         <div class="text-content">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur blanditiis praesentium ex
             nostrum excepturi dolores, autem quaerat itaque laudantium, illum nam error nulla, odit ducimus fuga saepe
-            labore recusandae!</p>
+          </p>
           <div class="two-content">
-            <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloribus perspiciatis veniam rerum
-                voluptatum sequi placeat magni consequuntur, velit vel nostrum, ex sed aut iusto aperiam incidunt maxime
-                vitae vero.</p>
+            <div class="variant">
+              <p>Soy un programador web frontend de 22 años, residente en Bogotá, Colombia. Mi pasión por la tecnología
+                y el desarrollo web me ha llevado a adquirir conocimientos sólidos en la creación de interfaces
+                modernas, dinámicas y altamente optimizadas. Me especializo en la construcción de experiencias digitales
+                intuitivas y atractivas para el usuario.</p>
+              <!-- <p>Mi enfoque está en el diseño y desarrollo de aplicaciones web responsivas utilizando tecnologías como
+                HTML, CSS, JavaScript y frameworks modernos como React. Siempre estoy en busca de nuevos desafíos que me
+                permitan crecer profesionalmente y contribuir con soluciones innovadoras al mundo digital.</p> -->
+              <a href="#" download="cv.pdf" class="btn">Descargar CV</a>
             </div>
-            <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloribus perspiciatis veniam rerum
-                voluptatum sequi placeat magni consequuntur, velit vel nostrum, ex sed aut iusto aperiam incidunt maxime
-                vitae vero.</p>
+            <div class="about-img">
+              <img src="/assets/images/person.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Habilidades -->
+    <section class="section-1 sec-pad block" id="skills">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="main-container">
+        <div class="text-content">
+          <p>A continuación, presento algunos de los proyectos en los que he trabajado, aplicando mis conocimientos en
+            desarrollo web y diseño de interfaces.</p>
+          <div class="badge-content">
+            <div class="row">
+              <span class="badge">HTML</span>
+              <span class="badge success">CSS</span>
+              <span class="badge info">JS</span>
+              <span class="badge info">BOOSTRAP</span>
+            </div>
+            <div class="row">
+              <span class="badge warning">PHP</span>
+              <span class="badge error">REACT</span>
+              <span class="badge error">SQL</span>
+              <span class="badge error">ANDROID</span>
             </div>
           </div>
         </div>
@@ -51,50 +81,69 @@
     </section>
 
     <!-- Sección: Proyectos -->
-    <section class="section-1 sec-pad">
-      <h2 class="section-title">Servicios</h2>
+    <section class="section-1 sec-pad block" id="proyect">
+      <h2 class="section-title">Proyectos</h2>
       <div class="main-container">
         <div class="text-content">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur blanditiis praesentium ex
-            nostrum excepturi dolores, autem quaerat itaque laudantium, illum nam error nulla, odit ducimus fuga saepe
-            labore recusandae!</p>
+          <p>A continuación, presento algunos de los proyectos en los que he trabajado, aplicando mis conocimientos
+            en
+            desarrollo web y diseño de interfaces.</p>
         </div>
         <div class="services-grid">
+          <!-- Project: FastFix -->
           <div class="service-card">
-            <div class="service-icon">🌐</div>
-            <h3>Desarrollo Web</h3>
-            <p>Desarrollo de sitios web responsivos y aplicaciones web modernas con las últimas tecnologías.</p>
+            <div class="content-img">
+              <img src="/assets/images/icon/git-icon.svg">
+            </div>
+            <h3>FastFix-Scheduler</h3>
+            <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
+              dispositivos
+              móviless.</p>
+            <a href="/Views/proyect.html" class="btn">Ver Proyecto</a>
           </div>
+          <!-- Project: Null -->
           <div class="service-card">
-            <div class="service-icon">🌐</div>
-            <h3>Desarrollo Web</h3>
-            <p>Desarrollo de sitios web responsivos y aplicaciones web modernas con las últimas tecnologías.</p>
+            <div class="content-img">
+              <img src="/assets/images/icon/git-icon.svg">
+            </div>
+            <h3>FastFix-Scheduler</h3>
+            <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
+              dispositivos
+              móviless.</p>
+            <a href="/Views/proyect.html" class="btn">Ver Proyecto</a>
           </div>
+          <!-- Project: Null -->
           <div class="service-card">
-            <div class="service-icon">🌐</div>
-            <h3>Desarrollo Web</h3>
-            <p>Desarrollo de sitios web responsivos y aplicaciones web modernas con las últimas tecnologías.</p>
+            <div class="content-img">
+              <img src="/assets/images/icon/git-icon.svg">
+            </div>
+            <h3>FastFix-Scheduler</h3>
+            <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
+              dispositivos
+              móviless.</p>
+            <a href="/Views/proyect.html" class="btn">Ver Proyecto</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Sección: Contacto -->
-    <section class="section-4 sec-pad">
+    <section class="section-1 sec-pad block" id="contact">
       <h2 class="section-title">Servicios</h2>
       <div class="main-container">
         <div class="text-content">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur blanditiis praesentium ex
-            nostrum excepturi dolores, autem quaerat itaque laudantium, illum nam error nulla, odit ducimus fuga saepe
-            labore recusandae!</p>
+          <p>Si estás interesado en trabajar conmigo o tienes alguna consulta sobre mis servicios, no dudes en
+            ponerte
+            en contacto. Estoy disponible para colaboraciones, proyectos freelance y oportunidades laborales en el
+            ámbito del desarrollo web.</p>
         </div>
         <!-- Formulario de Contacto -->
-        <form action="#" class="contact-form">
+        <form action="https://formspree.io/f/xeoajazz" method="POST" class="contact-form">
           <label class="form-label" for="name">Nombre</label>
           <input required placeholder="Ingrese su nombre" type="text" class="form-input" name="name" id="name">
 
           <label class="form-label" for="email">Correo Electrónico</label>
-          <input required placeholder="Ingrese su correo" type="email" class="form-input" name="email" id="email">
+          <input required placeholder="Ingrese su correo" type="email" name="email" class="form-input" id="email">
 
           <label class="form-label" for="message">Mensaje</label>
           <textarea required class="form-input" placeholder="Ingrese su mensaje" name="message" id="message"></textarea>
@@ -110,6 +159,27 @@
 
   <!-- Scripts -->
   <script src="/assets/js/loadComponents.js"></script>
+  <!-- Script: Effect write --->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const text = "¡Hola! Soy Johan";
+      const speed = 100;
+      let i = 0;
+      const typedText = document.getElementById("typed-text");
+
+      function typeWriter() {
+        if (i < text.length) {
+          typedText.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      typeWriter();
+    });
+
+  </script>
+
 </body>
 
 </html>
