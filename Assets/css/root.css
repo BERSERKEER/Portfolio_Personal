@@ -2,6 +2,8 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-gray: #d0d0d0;
+  --color-gray-light: #0c0c0c;
+  --color-sm: #333;
 
   --background-dark: var(--color-black);
   --background-light: var(--color-white);

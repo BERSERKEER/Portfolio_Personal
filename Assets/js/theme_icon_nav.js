@@ -3,9 +3,9 @@ function changeFavicon() {
     const favicon = document.getElementById('favicon');
     
     if (darkModeMediaQuery.matches) {
-      favicon.href = '../../assets/images/icon/icon_portfolio_light.svg'; // Icon dark theme
+      favifaviconon.href = '/assets/images/icon/icon_portfolio_dark.svg'; // Icon dark theme
     } else {
-      favicon.href = '../../assets/images/icon/icon_portfolio_dark.svg'; // Icon light theme
+      favicon.href = '/assets/images/icon/icon_portfolio_light.svg'; // Icon light theme
     }
   }
 
