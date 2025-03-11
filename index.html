@@ -6,15 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bienvenido</title>
+  <!-- Scripts <script src="./assets/js/loadComponents.js"></script>-->
   <meta name="description" content="Portfolio">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/normalize.css">
-  <link id="favicon" rel="icon" type="image/png" href="/assets/images/icon/icon_portfolio_light.svg">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link id="favicon" rel="icon" type="image/png" href="./assets/images/icon/icon_portfolio_light.svg">
 </head>
 
 <body class="fade-in">
-  <!-- Navegación -->
-  <div id="header-container"></div>
+  <!-- Navegación  <div id="header-container"></div>-->
+  <nav>
+    <ul>
+      <li><a href="./index.html#home">Inicio</a></li>
+      <li><a href="./index.html#about">Sobre mi</a></li>
+      <li><a href="./index.html#skills">Habilidades</a></li>
+      <li><a href="./index.html#proyect">Proyectos</a></li>
+      <li><a href="./index.html#contact">Contacto</a></li>
+    </ul>
+  </nav>
 
   <!-- Contenedor Principal -->
   <div class="container">
@@ -48,7 +57,7 @@
               <a href="#" download="cv.pdf" class="btn">Descargar CV</a>
             </div>
             <div class="about-img">
-              <img src="/assets/images/person.svg">
+              <img src="./assets/images/person.svg">
             </div>
           </div>
         </div>
@@ -93,7 +102,18 @@
           <!-- Project: FastFix -->
           <div class="service-card">
             <div class="content-img">
-              <img src="/assets/images/icon/git-icon.svg">
+              <img src="./assets/images/icon/git-icon.svg">
+            </div>
+            <h3>FastFix-Scheduler</h3>
+            <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
+              dispositivos
+              móviless.</p>
+            <a href="./proyect.html" class="btn">Ver Proyecto</a>
+          </div>
+          <!-- Project: Null -->
+          <div class="service-card">
+            <div class="content-img">
+              <img src="./assets/images/icon/git-icon.svg">
             </div>
             <h3>FastFix-Scheduler</h3>
             <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
@@ -104,18 +124,7 @@
           <!-- Project: Null -->
           <div class="service-card">
             <div class="content-img">
-              <img src="/assets/images/icon/git-icon.svg">
-            </div>
-            <h3>FastFix-Scheduler</h3>
-            <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
-              dispositivos
-              móviless.</p>
-            <a href="proyect.html" class="btn">Ver Proyecto</a>
-          </div>
-          <!-- Project: Null -->
-          <div class="service-card">
-            <div class="content-img">
-              <img src="/assets/images/icon/git-icon.svg">
+              <img src="./assets/images/icon/git-icon.svg">
             </div>
             <h3>FastFix-Scheduler</h3>
             <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
@@ -154,11 +163,40 @@
     </section>
   </div>
 
-  <!-- Pie de Página -->
-  <div id="footer-container"></div>
+  <!-- Pie de Página<div id="footer-container"></div> -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#web">Desarrollo Web</a></li>
+          <li><a href="#ui">Diseño UI/UX</a></li>
+          <li><a href="#mobile">Desarrollo Móvil</a></li>
+          <li><a href="#consulting">Consultoría</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Email: contacto@ejemplo.com</li>
+          <li>Teléfono: (123) 456-7890</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-  <!-- Scripts -->
-  <script src="/assets/js/loadComponents.js"></script>
   <!-- Script: Effect write --->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -179,7 +217,6 @@
     });
 
   </script>
-
 </body>
 
 </html>

@@ -8,7 +8,7 @@ function loadComponent(containerId, filePath) {
   
   // Cargar componentes
   document.addEventListener("DOMContentLoaded", function () {
-    loadComponent("footer-container", "./Views/component/footer.html");
-    loadComponent("header-container", "./Views/component/header.html");
+    loadComponent("footer-container", "../Views/component/footer.html");
+    loadComponent("header-container", "../Views/component/header.html");
   });
   

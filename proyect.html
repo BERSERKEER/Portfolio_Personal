@@ -7,14 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Proyect [Null]</title>
   <meta name="description" content="Portfolio">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/normalize.css">
-  <link id="favicon" rel="icon" type="image/png" href="/assets/images/icon/icon_portfolio_light.svg">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link id="favicon" rel="icon" type="image/png" href="./assets/images/icon/icon_portfolio_light.svg">
 </head>
 
 <body class="fade-in">
   <!-- Navegación -->
-  <div id="header-container"></div>
+  <nav>
+    <ul>
+      <li><a href="./index.html#home">Inicio</a></li>
+      <li><a href="./index.html#about">Sobre mi</a></li>
+      <li><a href="./index.html#skills">Habilidades</a></li>
+      <li><a href="./index.html#proyect">Proyectos</a></li>
+      <li><a href="./index.html#contact">Contacto</a></li>
+    </ul>
+  </nav>
   <!-- Contenedor Principal -->
   <div class="container">
 
@@ -32,7 +40,7 @@
     <section class="section-1 sec-pad block">
       <div class="main-container">
         <div class="preview">
-          <img src="/assets/images/tem-project.jpg">
+          <img src="./assets/images/tem-project.jpg">
         </div>
 
         <div class="two-content">
@@ -71,10 +79,38 @@
   </div>
 
   <!-- Pie de Página -->
-  <div id="footer-container"></div>
-
-  <!-- Scripts -->
-  <script src="/assets/js/loadComponents.js"></script>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#web">Desarrollo Web</a></li>
+          <li><a href="#ui">Diseño UI/UX</a></li>
+          <li><a href="#mobile">Desarrollo Móvil</a></li>
+          <li><a href="#consulting">Consultoría</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Email: contacto@ejemplo.com</li>
+          <li>Teléfono: (123) 456-7890</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
   <!-- Script: Effect write --->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
