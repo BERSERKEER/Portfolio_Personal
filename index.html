@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bienvenido</title>
+  <title>Portfolio - Desarrollador Frontend</title>
   <!-- Scripts <script src="./assets/js/loadComponents.js"></script>-->
   <meta name="description" content="Portfolio">
   <link rel="stylesheet" href="Assets/css/normalize.css">
@@ -15,208 +15,200 @@
 
 <body class="fade-in">
   <!-- Navegación  <div id="header-container"></div>-->
+  <!-- Navbar -->
   <nav>
-    <ul>
-      <li><a href="./index.html#home">Inicio</a></li>
-      <li><a href="./index.html#about">Sobre mi</a></li>
-      <li><a href="./index.html#skills">Habilidades</a></li>
-      <li><a href="./index.html#proyect">Proyectos</a></li>
-      <li><a href="./index.html#contact">Contacto</a></li>
-    </ul>
+    <div class="nav-content">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#hero">Sobre mi</a></li>
+        <li><a href="#proyectos">Habilidades</a></li>
+        <li><a href="#contacto">Proyectos</a></li>
+      </ul>
+      <a href="#contacto" class="cta-button">Contáctame</a>
+    </div>
   </nav>
+  <!-- Hero Section -->
+  <section id="inicio">
+    <div class="hero-content">
+     <h1><span id="typewriter" class="typewriter" aria-label="Bienvenido">Bienvenido</span></h1>
+      <h2>Desarrollador Frontend</h2>
+      <p>Programador Web Frontend | Apasionado por el Aprendizaje y la Innovación</p>
+    </div>
+    </div>
+  </section>
 
-  <!-- Contenedor Principal -->
-  <div class="container">
-    <!-- Encabezado -->
-    <header id="home" class="view">
-      <div class="block">
-        <h1 id="typed-text-container">
-          <span id="typed-text"></span><span class="cursor">|</span>
-        </h1>
-        <p>Programador Web Frontend | Apasionado por el Aprendizaje y la Innovación</p>
+  <!-- Sobre Mi -->
+  <section id="sobre-mi">
+    <h2 class="section-title">Sobre Mí</h2>
+    <div class="about-content">
+      <p>Soy un programador web frontend de 22 años, residente en Bogotá, Colombia. Mi pasión por la tecnología y
+        el desarrollo web me ha llevado a adquirir conocimientos sólidos en la creación de interfaces modernas,
+        dinámicas y altamente optimizadas. Me especializo en la construcción de experiencias digitales
+        intuitivas y atractivas para el usuario.</p>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML5 & CSS3</h3>
+        <p>Desarrollo semántico y diseño responsive con las últimas especificaciones</p>
       </div>
-    </header>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>ES6+, manipulación del DOM y programación asíncrona</p>
+      </div>
+      <div class="skill-card">
+        <h3>React</h3>
+        <p>Desarrollo de aplicaciones con componentes reutilizables y hooks</p>
+      </div>
+      <div class="skill-card">
+        <h3>Git & GitHub</h3>
+        <p>Control de versiones y colaboración en proyectos</p>
+      </div>
+      <div class="skill-card">
+        <h3>Responsive Design</h3>
+        <p>Diseños adaptables a cualquier dispositivo</p>
+      </div>
+      <div class="skill-card">
+        <h3>UI/UX</h3>
+        <p>Interfaces centradas en la experiencia del usuario</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sección: Sobre mi -->
-    <section class="section-1 sec-pad block" id="about">
-      <h2 class="section-title">Sobre mí</h2>
-      <div class="main-container">
-        <div class="text-content">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur blanditiis praesentium ex
-            nostrum df excepturi dolores, autem quaerat itaque laudantium, illum nam error nulla, odit ducimus fuga
-            saepe
-          </p>
-          <div class="two-content">
-            <div class="variant">
-              <p>Soy un programador web frontend de 22 años, residente en Bogotá, Colombia. Mi pasión por la tecnología
-                y el desarrollo web me ha llevado a adquirir conocimientos sólidos en la creación de interfaces
-                modernas, dinámicas y altamente optimizadas. Me especializo en la construcción de experiencias digitales
-                intuitivas y atractivas para el usuario.</p>
-              <!-- <p>Mi enfoque está en el diseño y desarrollo de aplicaciones web responsivas utilizando tecnologías como
-                HTML, CSS, JavaScript y frameworks modernos como React. Siempre estoy en busca de nuevos desafíos que me
-                permitan crecer profesionalmente y contribuir con soluciones innovadoras al mundo digital.</p> -->
-              <a href="#" download="cv.pdf" class="btn">Descargar CV</a>
-            </div>
-            <div class="about-img">
-              <img src="Assets/images/person.svg">
-            </div>
-          </div>
+  <!-- Proyectos -->
+  <section id="proyectos">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Services Platform</h3>
+        <p>Plataforma para la gestión de servicios automotrices y mecánicos.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Php</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="P.html" class="project-link demo-link">Ver Demo</a>
+          <a href="#" class="project-link code-link">Ver Código</a>
         </div>
       </div>
-    </section>
 
-    <!-- Sección: Habilidades -->
-    <section class="section-1 sec-pad block" id="skills">
-      <h2 class="section-title">Habilidades</h2>
-      <div class="main-container">
-        <div class="text-content">
-          <p>A continuación, presento algunos de los proyectos en los que he trabajado, aplicando mis conocimientos en
-            desarrollo web y diseño de interfaces.</p>
-          <div class="badge-content">
-            <div class="row">
-              <span class="badge">HTML</span>
-              <span class="badge success">CSS</span>
-              <span class="badge info">JS</span>
-              <span class="badge info">BOOSTRAP</span>
-            </div>
-            <div class="row">
-              <span class="badge warning">PHP</span>
-              <span class="badge error">REACT</span>
-              <span class="badge error">SQL</span>
-              <span class="badge error">ANDROID</span>
-            </div>
-          </div>
+      <div class="project-card">
+        <h3>QR Platform</h3>
+        <p>Panel para la generación de códigos QR personalizados para búsquedas.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">Chart.js</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link demo-link">Ver Demo</a>
+          <a href="#" class="project-link code-link">Ver Código</a>
         </div>
       </div>
-    </section>
 
-    <!-- Sección: Proyectos -->
-    <section class="section-1 sec-pad block" id="proyect">
-      <h2 class="section-title">Proyectos</h2>
-      <div class="main-container">
-        <div class="text-content">
-          <p>A continuación, presento algunos de los proyectos en los que he trabajado, aplicando mis conocimientos
-            en
-            desarrollo web y diseño de interfaces.</p>
+      <div class="project-card">
+        <h3>API Sale Steam</h3>
+        <p>Sitio web que notifica descuentos relacionados con videojuegos de Steam.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
         </div>
-        <div class="services-grid">
-          <!-- Project: FastFix -->
-          <div class="service-card">
-            <div class="content-img">
-              <img src="Assets/images/icon/css-icon.svg">
-            </div>
-            <h3>FastFix-Scheduler</h3>
-            <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
-              dispositivos
-              móviless.</p>
-            <a href="./proyect.html" class="btn">Ver Proyecto</a>
-          </div>
-          <!-- Project: Null -->
-          <div class="service-card">
-            <div class="content-img">
-              <img src="Assets/images/icon/css-icon.svg">
-            </div>
-            <h3>FastFix-Scheduler</h3>
-            <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
-              dispositivos
-              móviless.</p>
-            <a href="proyect.html" class="btn">Ver Proyecto</a>
-          </div>
-          <!-- Project: Null -->
-          <div class="service-card">
-            <div class="content-img">
-              <img src="Assets/images/icon/css-icon.svg">
-            </div>
-            <h3>FastFix-Scheduler</h3>
-            <p>Diseño y desarrollo de una plataforma de comercio electrónico con interfaz adaptativa para
-              dispositivos
-              móviless.</p>
-            <a href="proyect.html" class="btn">Ver Proyecto</a>
-          </div>
+        <div class="project-links">
+          <a href="#" class="project-link demo-link">Ver Demo</a>
+          <a href="#" class="project-link code-link">Ver Código</a>
         </div>
       </div>
-    </section>
 
-    <!-- Sección: Contacto -->
-    <section class="section-1 sec-pad block" id="contact">
-      <h2 class="section-title">Servicios</h2>
-      <div class="main-container">
-        <div class="text-content">
-          <p>Si estás interesado en trabajar conmigo o tienes alguna consulta sobre mis servicios, no dudes en
-            ponerte
-            en contacto. Estoy disponible para colaboraciones, proyectos freelance y oportunidades laborales en el
-            ámbito del desarrollo web.</p>
+      <div class="project-card">
+        <h3>Naruto Senki Revamp</h3>
+        <p>Videojuego con nuevas mecánicas y una remasterización visual.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Unity</span>
+          <span class="tech-tag">C#</span>
+          <span class="tech-tag">Pixel Art</span>
         </div>
-        <!-- Formulario de Contacto -->
-        <form action="https://formspree.io/f/xeoajazz" method="POST" class="contact-form">
-          <label class="form-label" for="name">Nombre</label>
-          <input required placeholder="Ingrese su nombre" type="text" class="form-input" name="name" id="name">
-
-          <label class="form-label" for="email">Correo Electrónico</label>
-          <input required placeholder="Ingrese su correo" type="email" name="email" class="form-input" id="email">
-
-          <label class="form-label" for="message">Mensaje</label>
-          <textarea required class="form-input" placeholder="Ingrese su mensaje" name="message" id="message"></textarea>
-
-          <button type="submit" class="btn btn--theme contact__btn">Enviar</button>
-        </form>
+        <div class="project-links">
+          <a href="#" class="project-link demo-link">Ver Demo</a>
+          <a href="#" class="project-link code-link">Ver Código</a>
+        </div>
       </div>
-    </section>
-  </div>
 
-  <!-- Pie de Página<div id="footer-container"></div> -->
+      <div class="project-card">
+        <h3>Space Impact Remake</h3>
+        <p>Remasterización del videojuego clásico, agregando nuevos objetos y mejoras visuales.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link demo-link">Ver Demo</a>
+          <a href="#" class="project-link code-link">Ver Código</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label fo r="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="footer-section">
-        <h4>Enlaces Rápidos</h4>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+        <h3>Johan Calderon</h3>
+        <p>Desarrollador Frontend apasionado por crear experiencias web excepcionales.</p>
       </div>
       <div class="footer-section">
-        <h4>Servicios</h4>
-        <ul>
-          <li><a href="#web">Desarrollo Web</a></li>
-          <li><a href="#ui">Diseño UI/UX</a></li>
-          <li><a href="#mobile">Desarrollo Móvil</a></li>
-          <li><a href="#consulting">Consultoría</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Contacto</h4>
-        <ul>
-          <li>Email: contacto@ejemplo.com</li>
-          <li>Teléfono: (123) 456-7890</li>
-        </ul>
+        <h3>Contacto</h3>
+        <a href="mailto:juan@ejemplo.com">calderonjohan604@gmail.com,</a>
+        <a href="tel:+573001234567">+57 300 123 4567</a>
+        <p>Bogotá, Colombia</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Johan Calderon. Todos los derechos reservados.</p>
     </div>
   </footer>
-
-  <!-- Script: Effect write --->
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const text = "¡Hola! Soy Johan";
-      const speed = 100;
+    document.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById('typewriter');
+      const text = 'Bienvenido';
+      const speed = 80; // ms por caracter — ajustar según prefieras
+      el.textContent = '';
+
       let i = 0;
-      const typedText = document.getElementById("typed-text");
-
-      function typeWriter() {
+      (function type() {
         if (i < text.length) {
-          typedText.innerHTML += text.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
+          el.textContent += text.charAt(i++);
+          setTimeout(type, speed);
         }
-      }
-
-      typeWriter();
+      })();
     });
-
   </script>
 </body>
 
